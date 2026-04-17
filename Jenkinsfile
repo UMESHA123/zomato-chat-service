@@ -5,6 +5,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS-22'
+    }
+
     environment {
         SERVICE_NAME    = 'chat-service'
         REPO_NAME       = 'zomato-chat-service'
